@@ -56,7 +56,7 @@ public class Ogar {
     public static Messenger getMessenger() {
         return INSTANCE.getMessenger();
     }
-    
+
     public static World getWorld() {
         return INSTANCE.getWorld();
     }
