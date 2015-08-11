@@ -18,6 +18,7 @@ package com.ogarproject.ogar.api;
 
 import com.ogarproject.ogar.api.plugin.Messenger;
 import com.ogarproject.ogar.api.plugin.PluginManager;
+import com.ogarproject.ogar.api.world.World;
 import java.util.logging.Logger;
 
 /**
@@ -45,5 +46,12 @@ public interface Server {
      * @return messenger associated with the server
      */
     public Messenger getMessenger();
+
+    /**
+     * Gets the server's world.
+     * 
+     * @return world associated with the server
+     */
+    public World getWorld();
 
 }

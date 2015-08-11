@@ -18,6 +18,7 @@ package com.ogarproject.ogar.api;
 
 import com.ogarproject.ogar.api.plugin.Messenger;
 import com.ogarproject.ogar.api.plugin.PluginManager;
+import com.ogarproject.ogar.api.world.World;
 import java.util.logging.Logger;
 
 /**
@@ -54,5 +55,9 @@ public class Ogar {
 
     public static Messenger getMessenger() {
         return INSTANCE.getMessenger();
+    }
+    
+    public static World getWorld() {
+        return INSTANCE.getWorld();
     }
 }
