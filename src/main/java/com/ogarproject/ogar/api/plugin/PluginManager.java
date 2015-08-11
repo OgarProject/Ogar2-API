@@ -1,18 +1,17 @@
 /**
  * This file is part of Ogar.
  *
- * Ogar is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
+ * Ogar is free software: you can redistribute it and/or modify it under the
+ * terms of the GNU General Public License as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option) any later
+ * version.
  *
- * Ogar is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
+ * Ogar is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU General Public License for more details.
  *
- * You should have received a copy of the GNU General Public License
- * along with Ogar.  If not, see <http://www.gnu.org/licenses/>.
+ * You should have received a copy of the GNU General Public License along with
+ * Ogar. If not, see <http://www.gnu.org/licenses/>.
  */
 package com.ogarproject.ogar.api.plugin;
 
@@ -70,7 +69,7 @@ public class PluginManager {
             try (ZipInputStream zip = new ZipInputStream(new FileInputStream(jarFile))) {
                 ZipEntry entry;
 
-                while ( (entry = zip.getNextEntry()) != null) {
+                while ((entry = zip.getNextEntry()) != null) {
                     if (!entry.getName().endsWith(".class")) {
                         continue;
                     }
@@ -181,5 +180,15 @@ public class PluginManager {
                 }
             }
         }
+    }
+
+    /**
+     * Gets the instance of the plugin by the specified name, if it exists.
+     *
+     * @param name the name of the plugin
+     * @return the instance of the plugin, or null if the plugin does not exist
+     */
+    public Plugin getPlugin(String name) {
+        return plugins.get(name.toLowerCase());
     }
 }
