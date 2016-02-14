@@ -17,7 +17,8 @@
 package com.ogarproject.ogar.api.event;
 
 /**
- * Used to set the priority of an {@link EventHandler}. Events are executed in the following order:
+ * Used to set the priority of an {@link EventHandler}. Events are executed in
+ * the following order:
  * <ol>
  * <li>LOWEST</li>
  * <li>LOW</li>
@@ -27,8 +28,10 @@ package com.ogarproject.ogar.api.event;
  * <li>MONITOR</li>
  * </ol>
  *
- * By default, EventHandler priorities are set to {@code NORMAL}. Events that are being handled on priority {@code MONITOR} should <b>not</b>, in any way, modify the outcome of the event. This priority is used for handlers that wish to
- * listen for the final outcome of the event.
+ * By default, EventHandler priorities are set to {@code NORMAL}. Events that
+ * are being handled on priority {@code MONITOR} should <b>not</b>, in any way,
+ * modify the outcome of the event. This priority is used for handlers that wish
+ * to listen for the final outcome of the event.
  */
 public enum EventPriority {
 

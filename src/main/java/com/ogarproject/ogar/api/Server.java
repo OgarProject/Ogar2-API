@@ -42,14 +42,14 @@ public interface Server {
 
     /**
      * Gets the server's messenger.
-     * 
+     *
      * @return messenger associated with the server
      */
     public Messenger getMessenger();
 
     /**
      * Gets the server's world.
-     * 
+     *
      * @return world associated with the server
      */
     public World getWorld();

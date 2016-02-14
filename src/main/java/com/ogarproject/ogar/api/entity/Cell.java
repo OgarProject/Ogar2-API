@@ -16,9 +16,13 @@
  */
 package com.ogarproject.ogar.api.entity;
 
-public interface CellEntity extends Entity {
+import com.ogarproject.ogar.api.CellOwner;
+
+public interface Cell extends Entity {
 
     public String getName();
 
     public void setName(String name);
+
+    public CellOwner getOwner();
 }

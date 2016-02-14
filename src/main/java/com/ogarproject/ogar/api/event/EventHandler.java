@@ -26,16 +26,19 @@ import java.lang.annotation.RetentionPolicy;
 public @interface EventHandler {
 
     /**
-     * Specifies the priority of this event handler. For more information, please see {@link com.ogarproject.ogar.api.event.EventPriority}.
+     * Specifies the priority of this event handler. For more information,
+     * please see {@link com.ogarproject.ogar.api.event.EventPriority}.
      *
      * @return the event handler's priority
      */
     public EventPriority priority() default EventPriority.NORMAL;
 
     /**
-     * If this value is set to true, this event handler will not be called if the event has been previously cancelled by another event handler.
+     * If this value is set to true, this event handler will not be called if
+     * the event has been previously cancelled by another event handler.
      *
-     * @return boolean indicating whether or not cancelled events should be ignored
+     * @return boolean indicating whether or not cancelled events should be
+     * ignored
      */
     public boolean ignoreCancelled() default false;
 }

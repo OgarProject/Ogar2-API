@@ -70,7 +70,7 @@ public class PluginManager {
             try (ZipInputStream zip = new ZipInputStream(new FileInputStream(jarFile))) {
                 ZipEntry entry;
 
-                while ( (entry = zip.getNextEntry()) != null) {
+                while ((entry = zip.getNextEntry()) != null) {
                     if (!entry.getName().endsWith(".class")) {
                         continue;
                     }
@@ -186,8 +186,7 @@ public class PluginManager {
     /**
      * Gets the instance of the plugin by the specified name, if it exists.
      *
-     * @param name
-     *            the name of the plugin
+     * @param name the name of the plugin
      * @return the instance of the plugin, or null if the plugin does not exist
      */
     public Plugin getPlugin(String name) {

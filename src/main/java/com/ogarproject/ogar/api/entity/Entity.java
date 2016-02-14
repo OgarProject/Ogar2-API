@@ -21,7 +21,8 @@ import com.ogarproject.ogar.api.world.World;
 import java.awt.Color;
 
 /**
- * An abstract class that describes an entity. An entity is any object in an Agar.io world.
+ * An abstract class that describes an entity. An entity is any object in an
+ * Agar.io world.
  */
 public interface Entity {
 

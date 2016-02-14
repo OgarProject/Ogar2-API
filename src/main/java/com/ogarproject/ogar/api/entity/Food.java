@@ -14,13 +14,8 @@
  * You should have received a copy of the GNU General Public License
  * along with Ogar.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.ogarproject.ogar.api.event;
+package com.ogarproject.ogar.api.entity;
 
-/**
- * An Event represents something that happens on an Ogar server. Although Ogar
- * provides its own standard events, plugins can also create their own events
- * for use by other plugins.
- */
-public abstract class Event {
+public interface Food extends Entity {
 
 }

@@ -38,7 +38,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Messenger handles sending and receiving OMP messages to and from OMP-capable clients.
+ * Messenger handles sending and receiving OMP messages to and from OMP-capable
+ * clients.
  */
 public class Messenger {
 

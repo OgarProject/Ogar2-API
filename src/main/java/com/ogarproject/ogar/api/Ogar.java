@@ -31,7 +31,8 @@ public class Ogar {
     /**
      * Static-use class.
      */
-    private Ogar() {}
+    private Ogar() {
+    }
 
     public static void setServer(Server server) {
         if (INSTANCE != null) {
