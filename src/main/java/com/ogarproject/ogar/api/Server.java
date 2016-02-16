@@ -18,6 +18,7 @@ package com.ogarproject.ogar.api;
 
 import com.ogarproject.ogar.api.plugin.Messenger;
 import com.ogarproject.ogar.api.plugin.PluginManager;
+import com.ogarproject.ogar.api.plugin.Scheduler;
 import com.ogarproject.ogar.api.world.World;
 import java.util.logging.Logger;
 
@@ -54,4 +55,10 @@ public interface Server {
      */
     public World getWorld();
 
+    /**
+     * Gets the server's scheduler.
+     *
+     * @return scheduler associated with the server
+     */
+    public Scheduler getScheduler();
 }
