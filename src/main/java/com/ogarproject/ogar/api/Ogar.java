@@ -61,4 +61,8 @@ public class Ogar {
     public static World getWorld() {
         return INSTANCE.getWorld();
     }
+    
+    public static Server getIp() {
+        return INSTANCE.getIp();
+    }
 }
