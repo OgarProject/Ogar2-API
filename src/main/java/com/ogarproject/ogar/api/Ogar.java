@@ -65,4 +65,8 @@ public class Ogar {
     public static Server getIp() {
         return INSTANCE.getIp();
     }
+    
+    public static int getPort() {
+        return INSTANCE.getPort();
+    }
 }
