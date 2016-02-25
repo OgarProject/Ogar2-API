@@ -71,10 +71,4 @@ public interface Server {
      */
     public Server getIp();
     
-    /**
-     * Get the game port that the server runs on.
-     *
-     * @return the port number of this server
-     */
-    public int getPort();
 }
