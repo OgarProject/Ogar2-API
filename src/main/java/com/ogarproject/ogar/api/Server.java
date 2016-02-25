@@ -61,4 +61,14 @@ public interface Server {
      * @return scheduler associated with the server
      */
     public Scheduler getScheduler();
+    
+    /**
+     * Get the IP that this server is bound to, or empty string if not
+     * specified.
+     *
+     * @return the IP string that this server is bound to, otherwise empty
+     *     string
+     */
+    public Server getIp();
+    
 }
