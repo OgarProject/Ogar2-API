@@ -66,7 +66,4 @@ public class Ogar {
         return INSTANCE.getIp();
     }
     
-    public static int getPort() {
-        return INSTANCE.getPort();
-    }
 }
